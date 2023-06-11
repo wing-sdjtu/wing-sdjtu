@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>消息推送</title><!--排版-->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- 涉及网页动画，勿动-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:100,300,300i,400,700,900">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css" id="main-styles-link">
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+  </head>
+  <body>
+	<!--ie8浏览器等级过低提示-->
+    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="cssload-container">
+          <div class="cssload-speeding-wheel"></div>
+        </div>
+      </div>
+    </div>
+    <div class="page">
+      <header class="section page-header">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap rd-navbar-absolute">
+          <nav class="rd-navbar rd-navbar-creative" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="20px" data-xl-stick-up-offset="20px" data-xxl-stick-up-offset="20px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!-- RD Navbar Toggle-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button><!--主页跳转-->
+                  <!-- RD Navbar Brand-->
+                  <div class="rd-navbar-brand"><a class="brand" href="index.html"><img src="images\logo-sdjtu.jpg" alt="" width="151" height="22"/></a><!--主页图标-->
+                  </div>
+                </div>
+                <div class="rd-navbar-main-element">
+                  <div class="rd-navbar-nav-wrap">
+                    <!-- RD Navbar Nav-->
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">主页</a><!--主页-->
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">车队介绍</a><!--关于-->
+                      </li>
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="message.html">消息推送</a><!--排版-->
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- RD Navbar Search-->
+                  <div class="rd-navbar-search">
+                    <button class="rd-navbar-search-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-search"><span></span></button>
+                    <form class="rd-search" action="#" method="GET">
+                      <div class="form-wrap">
+                        <label class="form-label" for="rd-navbar-search-form-input">Search</label><!--搜索按钮-->
+                        <input class="rd-navbar-search-form-input form-input" id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off">
+                        <div class="rd-search-results-live" id="rd-search-results-live"></div>
+                      </div>
+                      <button class="rd-search-form-submit mdi mdi-magnify" type="submit"></button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- Breadcrumbs -->
+	<!--开屏图片-->
+      <section class="section section-bredcrumbs" style="background: url(images/breadcrumbs.jpg) no-repeat center / cover">
+        <div class="container context-dark breadcrumb-wrapper text-left">
+          <h1>消息推送</h1><!--副标题1-->
+          <ul class="breadcrumbs-custom">
+            <li><a href="index.html">主页</a></li><!--主页索引-->
+            <li class="active">消息推送</li>
+          </ul>
+        </div>
+      </section>
+		
+		<!--靠左图片-->
+      <section class="section section-lg bg-default">
+        <div class="container2">
+          <div class="row">
+            <div class="col-lg-8 col-xl-12">
+              <div class="row row-30 row-offset-2">
+                <div class="col-md-4"><a href="https://mp.weixin.qq.com/s/L5OUP1-GrK_JNE8K3yOdvA"><img src="images/dynamic/post-32.jpg" alt="" width="770" height="512"/></a><!--图片-->
+                </div>
+                <div class="col-md-8">
+				  <a href="https://mp.weixin.qq.com/s/L5OUP1-GrK_JNE8K3yOdvA"><h3>“芒”于收获，不负播“种”</h3></a>
+				  <a href="https://mp.weixin.qq.com/s/L5OUP1-GrK_JNE8K3yOdvA"><font size="4" color="blue">2023年06月06日</font></a>
+                  <a href="https://mp.weixin.qq.com/s/L5OUP1-GrK_JNE8K3yOdvA"><p><font size="4" color="black">芒种是割麦子的时候，因为芒种代表的是小麦、稻谷成熟收割的季节，并且芒种的时候天气会变得炎热。在这个时节，农民手执镰刀收割作物，然而在明天，高考生们也将用笔杆写下期待......</font></p></a><!--正文-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--分区结束-->
+		
+			<!--靠左图片-->
+      <section class="section section-lg bg-default">
+        <div class="container2">
+          <div class="row">
+            <div class="col-lg-8 col-xl-12">
+              <div class="row row-30 row-offset-2">
+                <div class="col-md-4"><a href="https://mp.weixin.qq.com/s/OzbcxhurZc-A2e2U4REL8w"><img src="images/dynamic/post-31.jpg" alt="" width="770" height="512"/></a><!--图片-->
+                </div>
+                <div class="col-md-8">
+				  <a href="https://mp.weixin.qq.com/s/OzbcxhurZc-A2e2U4REL8w"><h3>FIND ONESELF|第二辑</h3></a>
+				  <a href="https://mp.weixin.qq.com/s/OzbcxhurZc-A2e2U4REL8w"><font size="4" color="blue">2023年06月06日</font></a>
+                  <a href="https://mp.weixin.qq.com/s/OzbcxhurZc-A2e2U4REL8w"><p><font size="4" color="black">“我们终其一生寻找的，应该是自己喜欢的生活方式，和想成为的人。所以多走点弯路也没关系的，花很多时间在路上也不要紧的，和世俗或是别人所期待的不一样也可以的。只要你是在成为你的路上就够了。”</font></p></a><!--正文-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--分区结束-->
+		
+		<!--靠左图片-->
+      <section class="section section-lg bg-default">
+        <div class="container2">
+          <div class="row">
+            <div class="col-lg-8 col-xl-12">
+              <div class="row row-30 row-offset-2">
+                <div class="col-md-4"><a href="https://mp.weixin.qq.com/s/aus8JrS37gGPxOeyP4STyQ"><img src="images/dynamic/post-30.jpg" alt="" width="770" height="512"/></a><!--图片-->
+                </div>
+                <div class="col-md-8">
+				  <a href="https://mp.weixin.qq.com/s/aus8JrS37gGPxOeyP4STyQ"><h3>【总结与展望】风翼车队运营部每周一会</h3></a>
+				  <a href="https://mp.weixin.qq.com/s/aus8JrS37gGPxOeyP4STyQ"><font size="4" color="blue">2023年06月06日</font></a>
+                  <a href="https://mp.weixin.qq.com/s/aus8JrS37gGPxOeyP4STyQ"><p><font size="4" color="black">6月来临，高考近在咫尺，对于车间的小伙伴们来说，期末考试也即将到来，在这个关键时期，我们长或短说，快来看看他们在说什么吧！</font></p></a><!--正文-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--分区结束-->
+		
+		<!--靠左图片-->
+      <section class="section section-lg bg-default">
+        <div class="container2">
+          <div class="row">
+            <div class="col-lg-8 col-xl-12">
+              <div class="row row-30 row-offset-2">
+                <div class="col-md-4"><a href="https://mp.weixin.qq.com/s/4GJMeUem8iub6CJLi6b0bQ"><img src="images/dynamic/post-29.jpg" alt="" width="770" height="512"/></a><!--图片-->
+                </div>
+                <div class="col-md-8">
+				  <a href="https://mp.weixin.qq.com/s/4GJMeUem8iub6CJLi6b0bQ"><h3>FIND ONESELF|第一辑</h3></a>
+				  <a href="https://mp.weixin.qq.com/s/4GJMeUem8iub6CJLi6b0bQ"><font size="4" color="blue">2023年06月04日</font></a>
+                  <a href="https://mp.weixin.qq.com/s/4GJMeUem8iub6CJLi6b0bQ"><p><font size="4" color="black">“我们终其一生寻找的，应该是自己喜欢的生活方式，和想成为的人。所以多走点弯路也没关系的，花很多时间在路上也不要紧的，和世俗或是别人所期待的不一样也可以的。只要你是在成为你的路上就够了。”</font></p></a><!--正文-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--分区结束-->
+		
+		<!--靠左图片-->
+      <section class="section section-lg bg-default">
+        <div class="container2">
+          <div class="row">
+            <div class="col-lg-8 col-xl-12">
+              <div class="row row-30 row-offset-2">
+                <div class="col-md-4"><a href="https://mp.weixin.qq.com/s/ui7izJHpfS5aVBGpaMcEmw"><img src="images/dynamic/post-28.jpg" alt="" width="770" height="512"/></a><!--图片-->
+                </div>
+                <div class="col-md-8">
+				  <a href="https://mp.weixin.qq.com/s/ui7izJHpfS5aVBGpaMcEmw"><h3>回顾总结|电气系统安全员培训</h3></a>
+				  <a href="https://mp.weixin.qq.com/s/ui7izJHpfS5aVBGpaMcEmw"><font size="4" color="blue">2023年06月04日</font></a>
+                  <a href="https://mp.weixin.qq.com/s/ui7izJHpfS5aVBGpaMcEmw"><p><font size="4" color="black">电气系统安全员培训回顾总结</font></p></a><!--正文-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--分区结束-->
+		
+		<!--靠左图片-->
+      <section class="section section-lg bg-default">
+        <div class="container2">
+          <div class="row">
+            <div class="col-lg-8 col-xl-12">
+              <div class="row row-30 row-offset-2">
+                <div class="col-md-4"><a href="https://mp.weixin.qq.com/s/rFHfbsBniE_qz86CAEhXSQ"><img src="images/dynamic/post-27.jpg" alt="" width="770" height="512"/></a><!--图片-->
+                </div>
+                <div class="col-md-8">
+				  <a href="https://mp.weixin.qq.com/s/rFHfbsBniE_qz86CAEhXSQ"><h3>当会议邂逅雨天</h3></a>
+				  <a href="https://mp.weixin.qq.com/s/rFHfbsBniE_qz86CAEhXSQ"><font size="4" color="blue">2023年05月29日</font></a>
+                  <a href="https://mp.weixin.qq.com/s/rFHfbsBniE_qz86CAEhXSQ"><p><font size="4" color="black">适逢雨天<br>风翼车队运营部的小伙伴<br>决定采用线上线下会议的形式开展会议</font></p></a><!--正文-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--分区结束-->
+		
+		<!--靠左图片-->
+      <section class="section section-lg bg-default">
+        <div class="container2">
+          <div class="row">
+            <div class="col-lg-8 col-xl-12">
+              <div class="row row-30 row-offset-2">
+                <div class="col-md-4"><a href="https://mp.weixin.qq.com/s/YekCxOnbFtBO6JCu_ko6yQ"><img src="images/dynamic/post-26.jpg" alt="" width="770" height="512"/></a><!--图片-->
+                </div>
+                <div class="col-md-8">
+				  <a href="https://mp.weixin.qq.com/s/YekCxOnbFtBO6JCu_ko6yQ"><h3>搭子！让你的世界不再孤单！</h3></a>
+				  <a href="https://mp.weixin.qq.com/s/YekCxOnbFtBO6JCu_ko6yQ"><font size="4" color="blue">2023年05月25日</font></a>
+                  <a href="https://mp.weixin.qq.com/s/YekCxOnbFtBO6JCu_ko6yQ"><p><font size="4" color="black">Z时代，“搭子”文化逐渐发展壮大。<br>所谓搭子，是一种新型社交关系，浅于朋友，重于同事，主打一个垂直细分领域的精准陪伴！<br>梁永安老师说：“搭子就是启动无限可能”，搭子让我们拥有了一种更丰富的社会生活。<br>那接下来就康康我们的搭子叭~</font></p></a><!--正文-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--分区结束-->
+		
+		<!--靠左图片-->
+      <section class="section section-lg bg-default">
+        <div class="container2">
+          <div class="row">
+            <div class="col-lg-8 col-xl-12">
+              <div class="row row-30 row-offset-2">
+                <div class="col-md-4"><a href="https://mp.weixin.qq.com/s/NEIZj7Uy_tilZZ6e0ist6g"><img src="images/dynamic/post-25.jpg" alt="" width="770" height="512"/></a><!--图片-->
+                </div>
+                <div class="col-md-8">
+				  <a href="https://mp.weixin.qq.com/s/NEIZj7Uy_tilZZ6e0ist6g"><h3>本文只属于你 @2019级的你</h3></a>
+				  <a href="https://mp.weixin.qq.com/s/NEIZj7Uy_tilZZ6e0ist6g"><font size="4" color="blue">2023年05月24日</font></a>
+                  <a href="https://mp.weixin.qq.com/s/NEIZj7Uy_tilZZ6e0ist6g"><p><font size="4" color="black">红楼又起微风，垂柳飘拂西东，<br>折柳相送，一去几度春秋？</font></p></a><!--正文-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--分区结束-->
+		
+		<!--靠左图片-->
+      <section class="section section-lg bg-default">
+        <div class="container2">
+          <div class="row">
+            <div class="col-lg-8 col-xl-12">
+              <div class="row row-30 row-offset-2">
+                <div class="col-md-4"><a href="https://mp.weixin.qq.com/s/oj6V9mAWSzdM_IN_yI6l2Q"><img src="images/dynamic/post-24.jpg" alt="" width="770" height="512"/></a><!--图片-->
+                </div>
+                <div class="col-md-8">
+				  <a href="https://mp.weixin.qq.com/s/oj6V9mAWSzdM_IN_yI6l2Q"><h3>风翼车队——五月月报</h3></a>
+				  <a href="https://mp.weixin.qq.com/s/oj6V9mAWSzdM_IN_yI6l2Q"><font size="4" color="blue">2023年05月24日</font></a>
+                  <a href="https://mp.weixin.qq.com/s/oj6V9mAWSzdM_IN_yI6l2Q"><p><font size="4" color="black">夏日将至，诸君依旧诚恪，未曾懈怠。<br>此间之你，比春花更灿烂；熠熠兮如骄阳。<br>在此，我们例行每月总结，及时勉励。</font></p></a><!--正文-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--分区结束-->
+		
+			<!--靠左图片-->
+      <section class="section section-lg bg-default">
+        <div class="container2">
+          <div class="row">
+            <div class="col-lg-8 col-xl-12">
+              <div class="row row-30 row-offset-2">
+                <div class="col-md-4"><a href="https://mp.weixin.qq.com/s/Q047wgS_ZAo7MehkjlpywQ"><img src="images/dynamic/post-23.jpg" alt="" width="770" height="512"/></a><!--图片-->
+                </div>
+                <div class="col-md-8">
+				  <a href="https://mp.weixin.qq.com/s/Q047wgS_ZAo7MehkjlpywQ"><h3>风翼车队运营部5月19日会议</h3></a>
+				  <a href="https://mp.weixin.qq.com/s/Q047wgS_ZAo7MehkjlpywQ"><font size="4" color="blue">2023年05月20日</font></a>
+                  <a href="https://mp.weixin.qq.com/s/Q047wgS_ZAo7MehkjlpywQ"><p><font size="4" color="black">风翼车队运营部在本次会议中<br>做出了一个重大决定<br>就这个决定，队员们进行了激烈的讨论<br>（提示一下：快看第三部分）</font></p></a><!--正文-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--分区结束-->
+		
+		<!--靠左图片-->
+      <section class="section section-lg bg-default">
+        <div class="container2">
+          <div class="row">
+            <div class="col-lg-8 col-xl-12">
+              <div class="row row-30 row-offset-2">
+                <div class="col-md-4"><a href="https://mp.weixin.qq.com/s/0tec8u8ocdRG06FpbmSYFA"><img src="images/dynamic/post-22.jpg" alt="" width="770" height="512"/></a><!--图片-->
+                </div>
+                <div class="col-md-8">
+				  <a href="https://mp.weixin.qq.com/s/0tec8u8ocdRG06FpbmSYFA"><h3>风翼车队向您发出一起过5.20的邀请</h3></a>
+				  <a href="https://mp.weixin.qq.com/s/0tec8u8ocdRG06FpbmSYFA"><font size="4" color="blue">2023年05月20日</font></a>
+                  <a href="https://mp.weixin.qq.com/s/0tec8u8ocdRG06FpbmSYFA"><p><font size="4" color="black">既然有学长们在车队替我们负重前行，那我们就好好享受这个节日吧！</font></p></a><!--正文-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--分区结束-->
+		
+			<!--靠左图片-->
+      <section class="section section-lg bg-default">
+        <div class="container2">
+          <div class="row">
+            <div class="col-lg-8 col-xl-12">
+              <div class="row row-30 row-offset-2">
+                <div class="col-md-4"><a href="https://mp.weixin.qq.com/s/POvBCeKvHErgokldVkNrVA"><img src="images/dynamic/post-21.jpg" alt="" width="770" height="512"/></a><!--图片-->
+                </div>
+                <div class="col-md-8">
+				  <a href="https://mp.weixin.qq.com/s/POvBCeKvHErgokldVkNrVA"><h3>今日小确幸——一起打扫卫生！</h3></a>
+				  <a href="https://mp.weixin.qq.com/s/POvBCeKvHErgokldVkNrVA"><font size="4" color="blue">2023年05月19日</font></a>
+                  <a href="https://mp.weixin.qq.com/s/POvBCeKvHErgokldVkNrVA"><p><font size="4" color="black">俗话说的好<br>一屋不扫，何以扫天下！<br>而今日阳光正好，微风不噪<br>让我们一起走进我们的车间<br>来看一下我们今日的--打扫卫生小分队叭</font></p></a><!--正文-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--分区结束-->
+		
+			<!--靠左图片-->
+      <section class="section section-lg bg-default">
+        <div class="container2">
+          <div class="row">
+            <div class="col-lg-8 col-xl-12">
+              <div class="row row-30 row-offset-2">
+                <div class="col-md-4"><a href="https://mp.weixin.qq.com/s/NE1B5Tq_hua8ykNZUy7-Vw"><img src="images/dynamic/post-20.jpg" alt="" width="770" height="512"/></a><!--图片-->
+                </div>
+                <div class="col-md-8">
+				  <a href="https://mp.weixin.qq.com/s/NE1B5Tq_hua8ykNZUy7-Vw"><h3>分享日常之我们“泰裤辣”！</h3></a>
+				  <a href="https://mp.weixin.qq.com/s/NE1B5Tq_hua8ykNZUy7-Vw"><font size="4" color="blue">2023年05月12日</font></a>
+                  <a href="https://mp.weixin.qq.com/s/NE1B5Tq_hua8ykNZUy7-Vw"><p><font size="4" color="black">在工作以外的时间，我们还会一起学习，学业也不落下。那些看似不起波澜的日复一日，会在某一天，让人看到坚持的意义。</font></p></a><!--正文-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--分区结束-->
+		
+			<!--靠左图片-->
+      <section class="section section-lg bg-default">
+        <div class="container2">
+          <div class="row">
+            <div class="col-lg-8 col-xl-12">
+              <div class="row row-30 row-offset-2">
+                <div class="col-md-4"><a href="https://mp.weixin.qq.com/s/S6PUs7od-9Ft-Rr-sVSsjg"><img src="images/dynamic/post-19.jpg" alt="" width="770" height="512"/></a><!--图片-->
+                </div>
+                <div class="col-md-8">
+				  <a href="https://mp.weixin.qq.com/s/S6PUs7od-9Ft-Rr-sVSsjg"><h3>【每周一会】五一之后再出发！</h3></a>
+				  <a href="https://mp.weixin.qq.com/s/S6PUs7od-9Ft-Rr-sVSsjg"><font size="4" color="blue">2023年05月07日</font></a>
+                  <a href="https://mp.weixin.qq.com/s/S6PUs7od-9Ft-Rr-sVSsjg"><p><font size="4" color="black">精彩的五一假期结束了，风翼车队运营部的小伙伴们又回到了无比熟悉的车间工作。<br>这次是五一假期结束之后运营部的小伙伴的第一次会议，休整是为了更好的出发，加油！</font></p></a><!--正文-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--分区结束-->
+		
+			<!--靠左图片-->
+      <section class="section section-lg bg-default">
+        <div class="container2">
+          <div class="row">
+            <div class="col-lg-8 col-xl-12">
+              <div class="row row-30 row-offset-2">
+                <div class="col-md-4"><a href="https://mp.weixin.qq.com/s/rprDcc4JAK-eq4jHBK_VVw"><img src="images/dynamic/post-18.jpg" alt="" width="770" height="512"/></a><!--图片-->
+                </div>
+                <div class="col-md-8">
+				  <a href="https://mp.weixin.qq.com/s/rprDcc4JAK-eq4jHBK_VVw"><h5>五一假期特辑</h5></a>
+				  <a href="https://mp.weixin.qq.com/s/rprDcc4JAK-eq4jHBK_VVw"><font size="4" color="blue">2023年05月05日</font></a>
+                  <a href="https://mp.weixin.qq.com/s/rprDcc4JAK-eq4jHBK_VVw"><p><font size="4" color="black">“只要我记得这花香，便对得起这时光。”</font></p></a><!--正文-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--分区结束-->
+		
+		<!--靠左图片-->
+      <section class="section section-lg bg-default">
+        <div class="container2">
+          <div class="row">
+            <div class="col-lg-8 col-xl-12">
+              <div class="row row-30 row-offset-2">
+                <div class="col-md-4"><a href="https://mp.weixin.qq.com/s/ijc2gZu3FyW0d_f_pdRmTQ"><img src="images/dynamic/post-17.jpg" alt="" width="770" height="512"/></a><!--图片-->
+                </div>
+                <div class="col-md-8">
+				  <a href="https://mp.weixin.qq.com/s/ijc2gZu3FyW0d_f_pdRmTQ"><h5>总结沉淀，踏实向前——2023赛季中国大学生方程式系列赛事全国队长交流会风翼车队队长参会心得</h5></a>
+				  <a href="https://mp.weixin.qq.com/s/ijc2gZu3FyW0d_f_pdRmTQ"><font size="4" color="blue">2023年04月30日</font></a>
+                  <a href="https://mp.weixin.qq.com/s/ijc2gZu3FyW0d_f_pdRmTQ"><p><font size="4" color="black">近日，风翼车队队长前往上海参加了全国大学生方程式队长会。通过此次参会，队长更深层次地接触、了解了其他车队的管理发展，与其他优秀车队和优秀与会人士交流学习，获得了颇多的感悟和感想。</font></p></a><!--正文-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--分区结束-->
+		
+			<!--靠左图片-->
+      <section class="section section-lg bg-default">
+        <div class="container2">
+          <div class="row">
+            <div class="col-lg-8 col-xl-12">
+              <div class="row row-30 row-offset-2">
+                <div class="col-md-4"><a href="https://mp.weixin.qq.com/s/nJdzTJlz8uvI70c0X27lyw"><img src="images/dynamic/post-16.jpg" alt="" width="770" height="512"/></a><!--图片-->
+                </div>
+                <div class="col-md-8">
+				  <a href="https://mp.weixin.qq.com/s/nJdzTJlz8uvI70c0X27lyw"><h3>我们的工作日常来啦~</h3></a>
+				  <a href="https://mp.weixin.qq.com/s/nJdzTJlz8uvI70c0X27lyw"><font size="4" color="blue">2023年04月29日</font></a>
+                  <a href="https://mp.weixin.qq.com/s/nJdzTJlz8uvI70c0X27lyw"><p><font size="4" color="black">围绕队长交流会展开的工作~<br>练歌~为宣传视频共同努力！</font></p></a><!--正文-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--分区结束-->
+		
+		<!--靠左图片-->
+      <section class="section section-lg bg-default">
+        <div class="container2">
+          <div class="row">
+            <div class="col-lg-8 col-xl-12">
+              <div class="row row-30 row-offset-2">
+                <div class="col-md-4"><a href="https://mp.weixin.qq.com/s/LwvXd4sZta-qdSILq7s_qw"><img src="images/dynamic/post-15.jpg" alt="" width="770" height="512"/></a><!--图片-->
+                </div>
+                <div class="col-md-8">
+				  <a href="https://mp.weixin.qq.com/s/LwvXd4sZta-qdSILq7s_qw"><h3>Hi，又来啦？</h3></a>
+				  <a href="https://mp.weixin.qq.com/s/LwvXd4sZta-qdSILq7s_qw"><font size="4" color="blue">2023年04月27日</font></a>
+                  <a href="https://mp.weixin.qq.com/s/LwvXd4sZta-qdSILq7s_qw"><p><font size="4" color="black">近日，山东交通学院风翼车队队长郑邵博于队长交流会向各个优秀的车队学习到许多知识，并针对于车队现有问题进行了深刻的总结与反思。在这之后队长召集技术部成员齐聚车间，开展了车队队员动员大会。</font></p></a><!--正文-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--分区结束-->
+		
+						<!--靠左图片-->
+      <section class="section section-lg bg-default">
+        <div class="container2">
+          <div class="row">
+            <div class="col-lg-8 col-xl-12">
+              <div class="row row-30 row-offset-2">
+                <div class="col-md-4"><a href="https://mp.weixin.qq.com/s/q9o2bP5oPlg-7Ya7zOJhiA"><img src="images/dynamic/post-14.jpg" alt="" width="770" height="512"/></a><!--图片-->
+                </div>
+                <div class="col-md-8">
+				  <a href="https://mp.weixin.qq.com/s/q9o2bP5oPlg-7Ya7zOJhiA"><h3>哇噻！这是在做什么？</h3></a>
+				  <a href="https://mp.weixin.qq.com/s/q9o2bP5oPlg-7Ya7zOJhiA"><font size="4" color="blue">2023年04月24日</font></a>
+                  <a href="https://mp.weixin.qq.com/s/q9o2bP5oPlg-7Ya7zOJhiA"><p><font size="4" color="black">本次会议主要对本周及本月工作进行总结以及对下一周工作进行讨论，主要分为任务分工，车队活动安排，以往失误的总结和优化，工作总结和安排以及商业逻辑方案的优化删减，通过这次会议继续营造团队脚踏实地，勇于创新的氛围，努力做出更有新意的内容，形式等。</font></p></a><!--正文-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--分区结束-->
+		
+						<!--靠左图片-->
+      <section class="section section-lg bg-default">
+        <div class="container2">
+          <div class="row">
+            <div class="col-lg-8 col-xl-12">
+              <div class="row row-30 row-offset-2">
+                <div class="col-md-4"><a href="https://mp.weixin.qq.com/s/PZSwH46xVreBVLeYYH4Kxw"><img src="images/dynamic/post-13.jpg" alt="" width="770" height="512"/></a><!--图片-->
+                </div>
+                <div class="col-md-8">
+				  <a href="https://mp.weixin.qq.com/s/PZSwH46xVreBVLeYYH4Kxw"><h4>冲决历史网罗，立于行健不息——风翼车队第三辑采访</h4></a>
+				  <a href="https://mp.weixin.qq.com/s/PZSwH46xVreBVLeYYH4Kxw"><font size="4" color="blue">2023年04月24日</font></a>
+                  <a href="https://mp.weixin.qq.com/s/PZSwH46xVreBVLeYYH4Kxw"><p><font size="4" color="black">于高山之巅，方见大河奔涌；<br>于群峰之上，更觉长风浩荡。</font></p></a><!--正文-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--分区结束-->
+		
+						<!--靠左图片-->
+      <section class="section section-lg bg-default">
+        <div class="container2">
+          <div class="row">
+            <div class="col-lg-8 col-xl-12">
+              <div class="row row-30 row-offset-2">
+                <div class="col-md-4"><a href="https://mp.weixin.qq.com/s/AUfBfZFYO2rL_nR7xHVlIw"><img src="images/dynamic/post-12.jpg" alt="" width="770" height="512"/></a><!--图片-->
+                </div>
+                <div class="col-md-8">
+				  <a href="https://mp.weixin.qq.com/s/AUfBfZFYO2rL_nR7xHVlIw"><h3>风翼车队——四月月报</h3></a>
+				  <a href="https://mp.weixin.qq.com/s/AUfBfZFYO2rL_nR7xHVlIw"><font size="4" color="blue">2023年04月24日</font></a>
+                  <a href="https://mp.weixin.qq.com/s/AUfBfZFYO2rL_nR7xHVlIw"><p><font size="4" color="black">最是一年春好处，我们不负韶华，不负春光，带着对未来的憧憬，实现了四月的荣光。</font></p></a><!--正文-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--分区结束-->
+		
+				<!--靠左图片-->
+      <section class="section section-lg bg-default">
+        <div class="container2">
+          <div class="row">
+            <div class="col-lg-8 col-xl-12">
+              <div class="row row-30 row-offset-2">
+                <div class="col-md-4"><a href="https://mp.weixin.qq.com/s/2p3vSllCmWpAr_tMV3CZJw"><img src="images/dynamic/post-11.jpg" alt="" width="770" height="512"/></a><!--图片-->
+                </div>
+                <div class="col-md-8">
+				  <a href="https://mp.weixin.qq.com/s/2p3vSllCmWpAr_tMV3CZJw"><h3>致谢！仿真秀赞助！</h3></a>
+				  <a href="https://mp.weixin.qq.com/s/2p3vSllCmWpAr_tMV3CZJw"><font size="4" color="blue">2023年04月20日</font></a>
+                  <a href="https://mp.weixin.qq.com/s/2p3vSllCmWpAr_tMV3CZJw"><p><font size="4" color="black">感谢仿真秀平台给予风翼车队的支持<br>我们们会用青春的激情和毅力迎接未来的挑战!<br>再次祝贵公司前途似锦，事业再创辉煌！</font></p></a><!--正文-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--分区结束-->
+		
+		<!--靠左图片-->
+      <section class="section section-lg bg-default">
+        <div class="container2">
+          <div class="row">
+            <div class="col-lg-8 col-xl-12">
+              <div class="row row-30 row-offset-2">
+                <div class="col-md-4"><a href="https://mp.weixin.qq.com/s/vanypj-3GsDhZgaIwsDobQ"><img src="images/dynamic/post-10.jpg" alt="" width="770" height="512"/></a><!--图片-->
+                </div>
+                <div class="col-md-8">
+				  <a href="https://mp.weixin.qq.com/s/vanypj-3GsDhZgaIwsDobQ"><h3>【不负韶华】风翼车队商业运营部第二次会议</h3></a>
+				  <a href="https://mp.weixin.qq.com/s/vanypj-3GsDhZgaIwsDobQ"><font size="4" color="blue">2023年04月20日</font></a>
+                  <a href="https://mp.weixin.qq.com/s/vanypj-3GsDhZgaIwsDobQ"><p><font size="4" color="black">昨日，商业运营部的各位成员再一次齐聚车间，为共同写商业营销方案的内容展开讨论。</font></p></a><!--正文-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--分区结束-->
+		
+		<!--靠左图片-->
+      <section class="section section-lg bg-default">
+        <div class="container2">
+          <div class="row">
+            <div class="col-lg-8 col-xl-12">
+              <div class="row row-30 row-offset-2">
+                <div class="col-md-4"><a href="https://mp.weixin.qq.com/s/aL8WlQjJ0dDJmQ20_lyTHw"><img src="images/dynamic/post-9.jpg" alt="" width="770" height="512"/></a><!--图片-->
+                </div>
+                <div class="col-md-8">
+				  <a href="https://mp.weixin.qq.com/s/aL8WlQjJ0dDJmQ20_lyTHw"><h4>叮~您的风翼车队运营部例会报告到啦~~请注意查收</h4></a>
+				  <a href="https://mp.weixin.qq.com/s/aL8WlQjJ0dDJmQ20_lyTHw"><font size="4" color="blue">2023年04月17日</font></a>
+                  <a href="https://mp.weixin.qq.com/s/aL8WlQjJ0dDJmQ20_lyTHw"><p><font size="4" color="black">昨日，风翼车队运营部每周例会如期举行。运营部全体成员聚在车间，对过去一周的工作进行总结反思，并为接下来工作的开展规划进行商讨。</font></p></a><!--正文-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--分区结束-->
+		
+		<!--靠左图片-->
+      <section class="section section-lg bg-default">
+        <div class="container2">
+          <div class="row">
+            <div class="col-lg-8 col-xl-12">
+              <div class="row row-30 row-offset-2">
+                <div class="col-md-4"><a href="https://mp.weixin.qq.com/s/Wnv86KS8g7ix4hePG4lX0g"><img src="images/dynamic/post-8.jpg" alt="" width="770" height="512"/></a><!--图片-->
+                </div>
+                <div class="col-md-8">
+				  <a href="https://mp.weixin.qq.com/s/Wnv86KS8g7ix4hePG4lX0g"><h3>扬起理想的风帆——风翼车队第二辑采访</h3></a>
+				  <a href="https://mp.weixin.qq.com/s/Wnv86KS8g7ix4hePG4lX0g"><font size="4" color="blue">2023年04月15日</font></a>
+                  <a href="https://mp.weixin.qq.com/s/Wnv86KS8g7ix4hePG4lX0g"><p><font size="4" color="black">四月，肆月，花肆意地开，少年迎风肆意奔跑</font></p></a><!--正文-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--分区结束-->
+		
+		<!--靠左图片-->
+      <section class="section section-lg bg-default">
+        <div class="container2">
+          <div class="row">
+            <div class="col-lg-8 col-xl-12">
+              <div class="row row-30 row-offset-2">
+                <div class="col-md-4"><a href="https://mp.weixin.qq.com/s/clJgZhk_47fVrApdCFZwjA"><img src="images/dynamic/post-7.jpg" alt="" width="770" height="512"/></a><!--图片-->
+                </div>
+                <div class="col-md-8">
+				  <a href="https://mp.weixin.qq.com/s/clJgZhk_47fVrApdCFZwjA"><h4>【不负韶华】风翼车队商业运营部召开会议，展开后期工作计划</h4></a>
+				  <a href="https://mp.weixin.qq.com/s/clJgZhk_47fVrApdCFZwjA"><font size="4" color="blue">2023年04月09日</font></a>
+                  <a href="https://mp.weixin.qq.com/s/clJgZhk_47fVrApdCFZwjA"><p><font size="4" color="black">近日，山东交通学院风翼车队商业运营部举行了会议，以方便后续工作的开展。</font></p></a><!--正文-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--分区结束-->
+		
+		<!--靠左图片-->
+      <section class="section section-lg bg-default">
+        <div class="container2">
+          <div class="row">
+            <div class="col-lg-8 col-xl-12">
+              <div class="row row-30 row-offset-2">
+                <div class="col-md-4"><a href="https://mp.weixin.qq.com/s/s5orYBOyNtTb_TrXwl3f4w"><img src="images/dynamic/post-6.jpg" alt="" width="770" height="512"/></a><!--图片-->
+                </div>
+                <div class="col-md-8">
+				  <a href="https://mp.weixin.qq.com/s/s5orYBOyNtTb_TrXwl3f4w"><h4>【感恩有你】致谢！易尔拓工具（上海）有限公司</h4></a>
+				  <a href="https://mp.weixin.qq.com/s/s5orYBOyNtTb_TrXwl3f4w"><font size="4" color="blue">2023年04月07日</font></a>
+                  <a href="https://mp.weixin.qq.com/s/s5orYBOyNtTb_TrXwl3f4w"><p><font size="4" color="black">热爱可抵岁月漫长，风翼与你来日方长。</font></p></a><!--正文-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--分区结束-->
+		
+				<!--靠左图片-->
+      <section class="section section-lg bg-default">
+        <div class="container2">
+          <div class="row">
+            <div class="col-lg-8 col-xl-12">
+              <div class="row row-30 row-offset-2">
+                <div class="col-md-4"><a href="https://mp.weixin.qq.com/s/XCcIsrWKYzkQln_PuQGAGg"><img src="images/dynamic/post-5.jpg" alt="" width="770" height="512"/></a><!--图片-->
+                </div>
+                <div class="col-md-8">
+				  <a href="https://mp.weixin.qq.com/s/XCcIsrWKYzkQln_PuQGAGg"><h3>仰望星空，砥砺前行——风翼车队第一辑采访</h3></a>
+				  <a href="https://mp.weixin.qq.com/s/XCcIsrWKYzkQln_PuQGAGg"><font size="4" color="blue">2023年04月02日</font></a>
+                  <a href="https://mp.weixin.qq.com/s/XCcIsrWKYzkQln_PuQGAGg"><p><font size="4" color="black">风翼车队队长专访</font></p></a><!--正文-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--分区结束-->
+		
+	  <!--靠左图片-->
+      <section class="section section-lg bg-default">
+        <div class="container2">
+          <div class="row">
+            <div class="col-lg-8 col-xl-12">
+              <div class="row row-30 row-offset-2">
+                <div class="col-md-4"><a href="https://mp.weixin.qq.com/s/z1OHBGNi0kj5scLPyVyReg"><img src="images/dynamic/post-4.jpg" alt="" width="770" height="512"/></a><!--图片-->
+                </div>
+                <div class="col-md-8">
+				  <a href="https://mp.weixin.qq.com/s/z1OHBGNi0kj5scLPyVyReg"><h3>庸常之中，微茫不朽—风翼车队第六周日常</h3></a>
+				  <a href="https://mp.weixin.qq.com/s/z1OHBGNi0kj5scLPyVyReg"><font size="4" color="blue">2023年03月30日</font></a>
+                  <a href="https://mp.weixin.qq.com/s/z1OHBGNi0kj5scLPyVyReg"><p><font size="4" color="black">草木蔓发，春山可望<br>在队长的带领下<br>车队也在蒸蒸日上<br>每个人都有信心，有动力，奋斗在第一线</font></p></a><!--正文-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--分区结束-->
+		
+		<!--靠左图片-->
+      <section class="section section-lg bg-default">
+        <div class="container2">
+          <div class="row">
+            <div class="col-lg-8 col-xl-12">
+              <div class="row row-30 row-offset-2">
+                <div class="col-md-4"><a href="https://mp.weixin.qq.com/s/1lu8EgamOFh_fHL4dfQnPg"><img src="images/dynamic/post-3.jpg" alt="" width="770" height="512"/></a><!--图片-->
+                </div>
+                <div class="col-md-8">
+				  <a href="https://mp.weixin.qq.com/s/1lu8EgamOFh_fHL4dfQnPg"><h3>风翼车队商业运营部萌新PS培训</h3></a>
+				  <a href="https://mp.weixin.qq.com/s/1lu8EgamOFh_fHL4dfQnPg"><font size="4" color="blue">2023年03月25日</font></a>
+                  <a href="https://mp.weixin.qq.com/s/1lu8EgamOFh_fHL4dfQnPg"><p><font size="4" color="black">继我校风翼车队技术部扩招完成之后，商业运营部也在上周正式完成扩招，越来越多的热爱方程式赛车、热爱大学生方程式赛事的同学加入了我们的队伍，为打造更加优秀的车队添砖加瓦，贡献自己的力量。</font></p></a><!--正文-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--分区结束-->
+	
+	  <!--靠左图片-->
+      <section class="section section-lg bg-default">
+        <div class="container2">
+          <div class="row">
+            <div class="col-lg-8 col-xl-12">
+              <div class="row row-30 row-offset-2">
+                <div class="col-md-4"><a href="https://mp.weixin.qq.com/s/r68SzLfsKNzbY9ngRpvd5g"><img src="images/dynamic/post-2.jpg" alt="" width="770" height="512"/></a><!--图片-->
+                </div>
+                <div class="col-md-8">
+				  <a href="https://mp.weixin.qq.com/s/r68SzLfsKNzbY9ngRpvd5g"><h3>三月月报</h3></a>
+				  <a href="https://mp.weixin.qq.com/s/r68SzLfsKNzbY9ngRpvd5g"><font size="4" color="blue">2023年03月25日</font></a>
+                  <a href="https://mp.weixin.qq.com/s/r68SzLfsKNzbY9ngRpvd5g"><p><font size="4" color="black">晨起幕落,早出晚归<br>队员们团结奋斗坚持日常问题的讨论</font></p></a><!--正文-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--分区结束-->
+		
+      <!--靠左图片-->
+      <section class="section section-lg bg-default">
+        <div class="container2">
+          <div class="row">
+            <div class="col-lg-8 col-xl-12">
+              <div class="row row-30 row-offset-2">
+                <div class="col-md-4"><a href="https://mp.weixin.qq.com/s/qlROU5paswM6hpQEBCMyKg"><img src="images/dynamic/post-1.jpg" alt="" width="770" height="512"/></a><!--图片-->
+                </div>
+                <div class="col-md-8">
+				  <a href="https://mp.weixin.qq.com/s/qlROU5paswM6hpQEBCMyKg"><h3>这个春天，向下扎根，向上生长</h3></a>
+				  <a href="https://mp.weixin.qq.com/s/qlROU5paswM6hpQEBCMyKg"><font size="4" color="blue">2023年03月24日</font></a>
+                  <a href="https://mp.weixin.qq.com/s/qlROU5paswM6hpQEBCMyKg"><p><font size="4" color="black">少年意气风发，自当凌云绝顶<br>风翼车队全体成员<br>立可为之志,行可为之事<br>将以最好的姿态追逐最美的梦想!</font></p></a><!--正文-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--分区结束-->
+		
+		
+      <footer class="section footer-2">
+        <div class="container">
+          <div class="row row-40">
+            <div class="col-md-6 col-lg-3"><a class="footer-logo" href="index.html"><img src="images/logo.png" alt="" width="180" height="26"/></a><!--车队简介-->
+              <p>山东交通学院风翼车队建立于2022年，是一支在疫情结束之际凝聚的新势力</p>
+			  <p>未来属于车队的所有人，让我们全力以赴赛场相见！</p>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <h5 class="text-white title">联系信息</h5><!--与我们联系的详细信息-->
+              <ul class="contact-box">
+                <li>
+                  <div class="unit unit-horizontal unit-spacing-xxs">
+                    <div class="unit-left"><span class="icon mdi mdi-map-marker accent-icon"></span></div>
+                    <div class="unit-body"><a href="https://ditu.amap.com/search?id=B0FFH0TW7V&city=370113&geoobj=116.78511%7C36.53557%7C116.794418%7C36.539659&query_type=IDQ&query=%E5%B1%B1%E4%B8%9C%E4%BA%A4%E9%80%9A%E5%AD%A6%E9%99%A2%E9%95%BF%E6%B8%85%E6%A0%A1%E5%8C%BA%E5%B7%A5%E7%A8%8B%E4%B8%AD%E5%BF%83G%E5%8C%BA&zoom=17.5">山东交通学院，海棠路5001号, <br class="veil reveal-lg-inline">山东省济南市长清区</a></div><!--地址详情，附高德地图车队定位-->
+                  </div>
+                </li>
+                <li>
+                  <div class="unit unit-horizontal unit-spacing-xxs">
+                    <div class="unit-left"><span class="icon mdi mdi-phone accent-icon"></span></div>
+                    <div class="unit-body">
+                      <ul class="list-phones">
+                        <li><a href="tel:#">18346693690</a></li><!--联系电话1-->
+                        <li><a href="tel:#">14768786086</a></li><!--联系电话2-->
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="unit unit-horizontal unit-spacing-xxs">
+                    <div class="unit-left"><span class="icon mdi mdi-email-outline accent-icon"></span></div>
+                    <div class="unit-body"><a href="mailto:#">m18346693690_1@163com</a></div><!--联系邮箱1-->
+                  </div>
+                </li>
+				<li>
+                  <div class="unit unit-horizontal unit-spacing-xxs">
+                    <div class="unit-left"><span class="icon mdi mdi-email-outline accent-icon"></span></div>
+                    <div class="unit-body"><a href="mailto:#">14768786086@163.com</a></div><!--联系邮箱2-->
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <h5 class="title">合作伙伴</h5><!--图集 共六张-->
+              <ul class="instafeed instagram-gallery" data-lightgallery="group">
+                <li><a class="instagram-item" href="https://www.sdjtu.edu.cn/"><img src="images/gallery/insta-gallery-1-72x72.jpg" alt="" width="72" height="72"/></a><!--第一张，山东交通学院主页-->
+				</li>	
+                <li><a class="instagram-item" href="http://www.formulastudent.com.cn/"><img src="images/gallery/insta-gallery-2-72x72.jpg" alt="" width="72" height="72"/></a><!--第二张，FSAE官网-->
+                </li>
+                <li><a class="instagram-item" href="index.html"><img src="images/gallery/insta-gallery-3-72x72.png" alt="" width="72" height="72"/></a><!--第三张，车队官网-->
+                </li>
+                <li><a class="instagram-item" href="https://www.yato-sh.com/"><img src="images/gallery/insta-gallery-4-72x72.jpg" alt="" width="72" height="72"/></a><!--第四张,易尔拓-->
+                </li>
+                <li><a class="instagram-item" href="https://www.fangzhenxiu.com/"><img src="images/gallery/insta-gallery-5-72x72.jpg" alt="" width="72" height="72"/></a><!--第五张，仿真秀-->
+                </li>
+                <li><a class="instagram-item" href="http://tst23817462.cn.trustexporter.com/"><img src="images/gallery/insta-gallery-6-72x72.jpg" alt="" width="72" height="72"/></a><!--第六张，速泊，暂无明确公司官网-->
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <h5 class="text-white title">加入我们</h5><!--新闻稿-->
+              <p>风翼车队欢迎新成员的加入，我们期待新鲜血液的融入。</p>
+			  <p>联系邮箱：xlinrui2004@163.com</p>
+			  <br>
+			 <h6 class="title">关于</h6>
+             <ul class="instafeed instagram-gallery2">
+				  	<li><a class="instagram-item2" href="images/wechat.jpg"><img src="icon/wechat.jpg" alt="" width="30" height="30"/></a></li><!--联系图标，微信-->
+				  	<li><a class="instagram-item2" href="https://www.douyin.com/user/MS4wLjABAAAAzG01SXducqUPNxKQUJvuJLJMvHSF0WXCJp2iBNb8eL9qGvsPCNz8O5KN6BY5oJ2i"><img src="icon/tik tok.jpg" alt="" width="30" height="30"/></a></li><!--联系图标，抖音-->
+				  	<li><a class="instagram-item2" href="https://weibo.com/7827488754?refer_flag=1001030103_"><img src="icon/weibo.jpg" alt="" width="30" height="30"/></a></li><!--联系图标，微博-->
+				  	<li><a class="instagram-item2" href="https://space.bilibili.com/3493263487011536?spm_id_from=333.337.0.0"><img src="icon/bili.jpg" alt="" width="30" height="30"/></a></li><!--联系图标，哔哩哔哩-->
+				  	<li><a class="instagram-item2" href="https://www.sdjtu.edu.cn/"><img src="icon/wechat." alt="" width="20" height="20"/></a></li><!--联系图标-->
+				  	<li><a class="instagram-item2" href="https://www.sdjtu.edu.cn/"><img src="icon/wechat." alt="" width="20" height="20"/></a></li><!--联系图标-->
+			  </ul>
+			</div>
+          </div>
+          <!-- Rights-->
+          <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span> <span>山东交通学院风翼车队</span>
+          </p>
+        </div>
+      </footer>
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
