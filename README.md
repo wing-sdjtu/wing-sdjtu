@@ -1,5 +1,5 @@
 ### Hi there 👋
-welcome to our team website
+welcome to our team website\n
 Currently it is a semi-finished website
 <!--
 **wing-sdjtu/wing-sdjtu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
